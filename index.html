@@ -1,1 +1,80 @@
-仮
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipeNotcher Lite</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PipeNotcher Lite</h1>
+        <p>現場向けパイプ型紙作成ツール</p>
+    </header>
+
+    <main>
+
+        <section class="input-panel">
+
+            <div class="input-group">
+                <label for="mainDiameter">主管外径 (mm)</label>
+                <input
+                    type="number"
+                    id="mainDiameter"
+                    value="60"
+                    min="1">
+            </div>
+
+            <div class="input-group">
+                <label for="branchDiameter">枝管外径 (mm)</label>
+                <input
+                    type="number"
+                    id="branchDiameter"
+                    value="34"
+                    min="1">
+            </div>
+
+            <div class="input-group">
+                <label for="angle">交差角度 (°)</label>
+                <input
+                    type="number"
+                    id="angle"
+                    value="90"
+                    min="1"
+                    max="90">
+            </div>
+
+            <div class="input-group">
+                <label for="division">分割数</label>
+                <select id="division">
+                    <option value="32">32</option>
+                    <option value="64" selected>64</option>
+                    <option value="128">128</option>
+                </select>
+            </div>
+
+            <button id="generateBtn">
+                型紙を作成
+            </button>
+
+        </section>
+
+        <section class="preview-panel">
+
+            <h2>プレビュー</h2>
+
+            <div id="svgContainer">
+                <!-- ここにSVGを表示 -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
