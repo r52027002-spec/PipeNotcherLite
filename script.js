@@ -163,8 +163,4 @@ function createTestSVG() {
     `;
 
     svgContainer.innerHTML = svg;
-
-console.log("script.js 読み込み成功");
-
-svgContainer.innerHTML = "<h2>JavaScript 読み込み成功！</h2>";
 }
