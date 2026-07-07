@@ -1,2 +1,8 @@
-# PipeNotcherLite
-パイプ同士を組み合わせる為の型紙を作るソフト
+PipeNotcherLite
+
+現場向けの配管型紙作成ツール
+
+特徴
+・スマホ対応
+・SVG出力
+・GitHub Pages対応
