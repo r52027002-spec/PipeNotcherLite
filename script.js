@@ -40,7 +40,7 @@ function generatePattern() {
     console.log(input);
 
     // SVGを表示
-    createtestSVG(input);
+    createTestSVG(input);
 
 }
 
