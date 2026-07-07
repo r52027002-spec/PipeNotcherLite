@@ -98,69 +98,19 @@ function showMessage(data) {
 
 function createTestSVG() {
 
-    const width = 500;
-    const height = 400;
+    svgContainer.innerHTML = `
+        <svg width="300" height="300"
+             xmlns="http://www.w3.org/2000/svg">
 
-    let svg = `
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="${width}"
-            height="${height}"
-            viewBox="0 0 ${width} ${height}">
-
-            <!-- 背景 -->
             <rect
-                x="0"
-                y="0"
-                width="${width}"
-                height="${height}"
-                fill="white"/>
-
-            <!-- 外枠 -->
-            <rect
-                x="1"
-                y="1"
-                width="${width - 2}"
-                height="${height - 2}"
-                fill="none"
-                stroke="#999"/>
-
-            <!-- 横線 -->
-            <line
-                x1="50"
-                y1="200"
-                x2="450"
-                y2="200"
-                stroke="red"
-                stroke-width="2"/>
-
-            <!-- 縦線 -->
-            <line
-                x1="250"
-                y1="50"
-                x2="250"
-                y2="350"
-                stroke="blue"
-                stroke-width="2"/>
-
-            <!-- 円 -->
-            <circle
-                cx="250"
-                cy="200"
-                r="80"
-                fill="none"
-                stroke="green"
-                stroke-width="3"/>
-
-            <!-- 中央の点 -->
-            <circle
-                cx="250"
-                cy="200"
-                r="4"
-                fill="black"/>
+                x="20"
+                y="20"
+                width="260"
+                height="260"
+                fill="lightgray"
+                stroke="black"/>
 
         </svg>
     `;
 
-    svgContainer.innerHTML = svg;
 }
